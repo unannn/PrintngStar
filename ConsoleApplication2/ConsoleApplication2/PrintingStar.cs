@@ -26,7 +26,7 @@ namespace ConsoleApplication2
                 else if (selectNumber == 5) break;
 
                 Console.Write("1이상의 정수 입력 : ");
-                inputNumber = int.Parse(Console.ReadLine());
+                inputNumber = int.Parse(Console.ReadLine());  //정수형이 아닐 경우 구현
                 switch (selectNumber)
                 {
                     case 1:
@@ -48,21 +48,71 @@ namespace ConsoleApplication2
         }
         private void PrintPramid(int inputNumber)
         {
-            Console.WriteLine("1 : " + inputNumber);
+            int i,j;
+
+            Console.WriteLine();
+            for (i = 0; i < inputNumber; i++)
+            {
+                for (j = 0; j < inputNumber - i - 1; j++) Console.Write(" ");
+                for (j = 0; j < 2 * i + 1; j++) Console.Write("*");
+                Console.WriteLine();
+            }
+            Console.WriteLine();
         }
         private void PrintReversedPramid(int inputNumber)
         {
-            Console.WriteLine("2 : " + inputNumber);
+            int i, j;
 
+            Console.WriteLine();
+            for (i = 0; i < inputNumber; i++)
+            {
+                for (j = 0; j < i; j++) Console.Write(" ");
+                for (j = 0; j < 2 * (inputNumber - i) - 1; j++) Console.Write("*");
+                Console.WriteLine();
+            }
+            Console.WriteLine();
         }
         private void PrintSandglass(int inputNumber)
         {
-            Console.WriteLine("3 : " + inputNumber);
+            int i, j;
 
+            Console.WriteLine();
+
+            for (i = 0; i < inputNumber; i++)                   
+            {
+                for (j = 0; j < i; j++) Console.Write(" ");
+                for (j = 0; j < 2 * (inputNumber - i) - 1; j++) Console.Write("*");
+                Console.WriteLine();
+            }
+            for (i = 0; i < inputNumber; i++)
+            {
+                for (j = 0; j < inputNumber - i - 1; j++) Console.Write(" ");
+                for (j = 0; j < 2 * i + 1; j++) Console.Write("*");
+                Console.WriteLine();
+            }
+
+            Console.WriteLine();
         }
         private void PrintDiamond(int inputNumber)
         {
-            Console.WriteLine("4 : " + inputNumber);
+            int i, j;
+
+            Console.WriteLine();
+
+            for (i = 0; i < inputNumber; i++)
+            {
+                for (j = 0; j < inputNumber - i - 1; j++) Console.Write(" ");
+                for (j = 0; j < 2 * i + 1; j++) Console.Write("*");
+                Console.WriteLine();
+            }
+            for (i = 1; i < inputNumber; i++)
+            {
+                for (j = 0; j < i; j++) Console.Write(" ");
+                for (j = 0; j < 2 * (inputNumber - i) - 1; j++) Console.Write("*");
+                Console.WriteLine();
+            }
+           
+            Console.WriteLine();
 
         }
     }
