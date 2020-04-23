@@ -10,6 +10,7 @@ namespace ConsoleApplication2
     {   
         public void PrintSelected(int selectNumber, int inputNumber)
         {
+            
             switch (selectNumber)
             {
                 case 1:
@@ -35,6 +36,7 @@ namespace ConsoleApplication2
             Console.WriteLine();
             for (i = 0; i < inputNumber; i++)
             {
+                Console.SetCursorPosition(5, 6 + i);
                 for (j = 0; j < inputNumber - i - 1; j++) Console.Write(" ");
                 for (j = 0; j < 2 * i + 1; j++) Console.Write("*");
                 Console.WriteLine();
@@ -48,6 +50,7 @@ namespace ConsoleApplication2
             Console.WriteLine();
             for (i = 0; i < inputNumber; i++)
             {
+                Console.SetCursorPosition(5, 6+i);
                 for (j = 0; j < i; j++) Console.Write(" ");
                 for (j = 0; j < 2 * (inputNumber - i) - 1; j++) Console.Write("*");
                 Console.WriteLine();
@@ -62,12 +65,14 @@ namespace ConsoleApplication2
 
             for (i = 0; i < inputNumber; i++)
             {
+                Console.SetCursorPosition(5, 6 + i);
                 for (j = 0; j < i; j++) Console.Write(" ");
                 for (j = 0; j < 2 * (inputNumber - i) - 1; j++) Console.Write("*");
                 Console.WriteLine();
             }
             for (i = 0; i < inputNumber; i++)
             {
+                Console.SetCursorPosition(5, 6 + i + inputNumber);
                 for (j = 0; j < inputNumber - i - 1; j++) Console.Write(" ");
                 for (j = 0; j < 2 * i + 1; j++) Console.Write("*");
                 Console.WriteLine();
@@ -83,12 +88,14 @@ namespace ConsoleApplication2
 
             for (i = 0; i < inputNumber; i++)
             {
+                Console.SetCursorPosition(5, 6 + i);
                 for (j = 0; j < inputNumber - i - 1; j++) Console.Write(" ");
                 for (j = 0; j < 2 * i + 1; j++) Console.Write("*");
                 Console.WriteLine();
             }
             for (i = 1; i < inputNumber; i++)
             {
+                Console.SetCursorPosition(5, 6 + i + inputNumber - 1);
                 for (j = 0; j < i; j++) Console.Write(" ");
                 for (j = 0; j < 2 * (inputNumber - i) - 1; j++) Console.Write("*");
                 Console.WriteLine();
