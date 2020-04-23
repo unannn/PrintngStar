@@ -9,8 +9,7 @@ namespace ConsoleApplication2
     class PrintTypes
     {   
         public void PrintSelected(int selectNumber, int inputNumber)
-        {
-            
+        {            
             switch (selectNumber)
             {
                 case 1:
