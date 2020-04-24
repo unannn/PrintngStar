@@ -8,7 +8,7 @@ namespace ConsoleApplication2
 {
     class PrintTypes
     {   
-        public void PrintSelected(int selectNumber, int inputNumber)
+        public void PrintSelectedType(int selectNumber, int inputNumber)  //입력된 정수에 따라 선택된 타입의 별 찍기 메소드 호출 메소드
         {            
             switch (selectNumber)
             {
@@ -35,7 +35,7 @@ namespace ConsoleApplication2
             Console.WriteLine();
             for (i = 0; i < inputNumber; i++)
             {
-                Console.SetCursorPosition(5, 6 + i);
+                Console.SetCursorPosition(5, 6 + i);                 //별찍기 시작 위치
                 for (j = 0; j < inputNumber - i - 1; j++) Console.Write(" ");
                 for (j = 0; j < 2 * i + 1; j++) Console.Write("*");
                 Console.WriteLine();

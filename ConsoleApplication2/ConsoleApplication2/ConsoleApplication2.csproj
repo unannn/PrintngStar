@@ -43,6 +43,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="GameFlow.cs" />
     <Compile Include="PrintingStar.cs" />
     <Compile Include="PrintTypes.cs" />
     <Compile Include="Program.cs" />
